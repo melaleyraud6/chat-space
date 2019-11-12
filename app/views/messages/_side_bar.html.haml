@@ -1,22 +1,24 @@
-.flash-box
-.wrapper
-  .chat-side
-    .side-header
-      .side-header__box
-        %p.side-header__box__user-name
-        ユーザー名前
-        %ul.side-header__box__menu
-          %li.side-header__box__menu__new-group
-            = link_to "#", class: "side-header__box__menu__btn" do
-              = icon('fas', 'edit')
-          %li.side-header__box__menu__edit-user
-            = link_to "#", class: "side-header__box__menu__btn" do
-              = icon('fas', 'cog')
-            
-    .groups
-      %a 
-        .group
-        %p.group__group-name
-        チャットグループ名
-        %p.group__lastest-message
-        チャット文（２５字以内）
+.chat-side
+  .side-header
+    .side-header__box
+      %p.side-header__box__user-name Shouya
+    
+      %ul.side-header__box__menu
+        %li.side-header__box__menu__new-group
+          = link_to "#", class: "side-header__box__menu__btn " do
+            = icon('fas', 'edit', class: "fa-fw")
+        %li.side-header__box__menu__edit-user
+          = link_to "#", class: "side-header__box__menu__btn " do
+            = icon('fas', 'cog', class: "fa-fw")
+        
+  .groups
+    %a 
+      .group
+        %p.group__group-name  test
+        %p.group__lastest-message まだメッセージはありません
+        
+    %a 
+      .group
+        %p.group__group-name test2
+        %p.group__lastest-message まだメッセージはありません
+

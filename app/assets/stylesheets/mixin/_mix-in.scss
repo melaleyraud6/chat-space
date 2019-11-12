@@ -1,0 +1,8 @@
+@mixin flex-style {
+  display:flex;
+  justify-content: space-between;
+}
+
+@mixin font-size($font) {
+  font-size: $font;
+}

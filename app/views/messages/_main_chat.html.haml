@@ -1,0 +1,24 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group test
+      %ul.main-header__left-box__member-list
+        Member :
+        %li.main-header__left-box__member-list__member syouya
+    %a
+      .main-header__edit-btn Edit
+
+  .messages 
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker shouya
+        %p.message__upper-info__date 2019/11/11/(Mon) 00:00:00
+      %p.message_text 仮入力です
+  .form
+    %form
+      .input-box
+        %input{type: "text", placeholder: "Type a message",class: "input-box__text"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image', class: "input-box__image--icon")
+          %input{type: "file",class: "input-box__image--file"}
+      %input{type: "submit", value: "Send" , class: "submit-btn"}

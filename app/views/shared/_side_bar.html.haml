@@ -13,13 +13,11 @@
             = icon('fas', 'cog', class: "fa-fw")
         
   .groups
-    %a 
+    - current_user.groups.each do |group|
       .group
-        %p.group__group-name  test
-        %p.group__lastest-message まだメッセージはありません
-        
-    %a
-      .group
-        %p.group__group-name test2
-        %p.group__lastest-message まだメッセージはありません
-
+        =link_to group_messages_path(group) do
+          .group__group-name 
+            = group.name
+          .group__lastest-message まだメッセージはありません
+    
+    

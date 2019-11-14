@@ -31,10 +31,12 @@
       margin-bottom: 40px;
       &__group-name {
         @include font-size(15px);
-         margin-bottom: 5px;
-       }
+        margin-bottom: 5px;
+        color: $white-color;
+      }
       &__lastest-message {
-      @include font-size(11px);
+        @include font-size(11px);
+        color: $white-color;
       }
     } 
   } 

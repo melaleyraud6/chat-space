@@ -18,6 +18,7 @@
         =link_to group_messages_path(group) do
           .group__group-name 
             = group.name
-          .group__lastest-message まだメッセージはありません
+          .group__lastest-message
+            = group.show_last_message
     
     

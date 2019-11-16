@@ -1,0 +1,22 @@
+.message
+  .message__upper-info
+    .message__upper-info__talker 
+      = message.user.name
+    .message__upper-info__date
+      = message.created_at.strftime("%Y/%m/%d(%a) %H:%M:%S")
+  .message_text 
+    - if message.body.present?
+      %p.message_text__content
+        = message.body
+    = image_tag message.image.url, class: 'message_text__image' if message.image.present?
+
+
+
+-# .form
+-#   = form_for [@group, @message] do |f|
+-#     = f.text_field :body, placeholder: "type a message",class: "input-box__text"
+-#     .input-box
+-#       = f.label :image , class: "input-box__image" do
+-#         = icon('fas', 'image', class: "input-box__image--icon")
+-#         = f.file_field :image, class: "input-box__image--file"
+-#     = f.submit "Send", value: "Send" , class: "submit-btn"

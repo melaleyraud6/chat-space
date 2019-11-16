@@ -33,10 +33,12 @@
         @include font-size(15px);
         margin-bottom: 5px;
         color: $white-color;
+        text-decoration: none;
       }
       &__lastest-message {
         @include font-size(11px);
         color: $white-color;
+        text-decoration: none;
       }
     } 
   } 
